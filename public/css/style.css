@@ -1,0 +1,174 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+/* Footer */
+.f-info {
+  text-align: center;
+  height: 8rem;
+  display: flex;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ⬆️ UPDATED: Social Icons Larger */
+.f-info-socials a {
+  color: #222;
+  margin: 0 0.5rem;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.f-info-socials a:hover {
+  color: #fe424d;
+  transform: scale(1.2);
+}
+
+/* Listing Cards */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.add-btn,
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Show Page */
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Star Rating Styling */
+.star-rating {
+  direction: rtl;
+  font-size: 2rem;
+  unicode-bidi: bidi-override;
+  display: inline-flex;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0 3px;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #f5b301;
+}
+
+/* Search Bar */
+.search-btn {
+  background-color: #fe424d;
+  color: #fff;
+  display: inline;
+  margin-right: 0.5rem;
+  border-radius: 25px;
+  padding: 0 2rem;
+}
+
+.search-btn:hover {
+  background-color: #fe424d;
+  color: #fff;
+}
+
+.search-inp {
+  border-radius: 25px;
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
+}
+
+/* Stayio Brand Name beside logo */
+.stayio-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fe424d;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+}
