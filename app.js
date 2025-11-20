@@ -99,6 +99,7 @@ app.all("*", (req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
+  console.log("🔥 FULL ERROR:", err);  // <-- THIS WILL SHOW THE REAL PROBLEM IN VERCEL
   const { statusCode = 500, message = "Something went wrong" } = err;
   res.status(statusCode).render("error.ejs", { message });
 });
