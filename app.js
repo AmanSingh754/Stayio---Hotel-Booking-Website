@@ -23,7 +23,12 @@ const flash = require("connect-flash");
 
 // ---------------------- MONGODB CONNECTION ----------------------
 
-const MONGO_URL = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/wanderlust";
+if (!process.env.MONGO_URI) {
+  throw new Error("❌ MONGO_URI is missing in environment variables");
+}
+
+const MONGO_URL = process.env.MONGO_URI;
+
 
 mongoose.connect(MONGO_URL, {
   useNewUrlParser: true,
